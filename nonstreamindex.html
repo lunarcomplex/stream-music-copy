@@ -1,0 +1,48 @@
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+
+
+
+<!DOCTYPE HTML>
+<html>
+
+  <title></title>
+
+  <head>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        background-color: #404040;
+      }
+      #main_canvas,
+      #hud_canvas{
+        width: 100%;
+        height: 100%;
+        position: absolute; 
+        display: block;
+        background-color: transparent;
+        cursor: default;
+        white-space: nowrap;
+      }
+      #main_canvas{z-index: 0}
+      #hud_canvas{z-index: 1}
+      #hidden_canvas{display: none}
+    </style>
+  </head>
+
+  <body onload="main();">
+    <canvas id="main_canvas" oncontextmenu="return false"></canvas>
+    <canvas id="hud_canvas" oncontextmenu="return false"></canvas>
+    <canvas id="hidden_canvas"></canvas>
+  </body>
+
+  <script type="text/javascript" src="setupController.js"></script>
+  <script type="text/javascript" src="objects.js"></script>
+  <script type="text/javascript" src="graphicsController.js"></script>
+  <script type="text/javascript" src="mainController.js"></script>
+
+</html>
